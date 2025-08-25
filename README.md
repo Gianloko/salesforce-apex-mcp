@@ -187,7 +187,7 @@ pip install aiohttp
 2. Run the python MCP Client
 
 ```bash
-python mcp-client.py
+python client/mcp-client.py
 ```
 
 ### Security Considerations (Salesforce MCP Apex Server)
