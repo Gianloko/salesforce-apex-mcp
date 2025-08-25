@@ -165,7 +165,7 @@ server.registerPrompt(new CodeReviewPrompt());
 
 To test the server, use the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) tool.
 
-### Connecting to Your Server
+### Connecting to Your Server with MCP Inspector
 
 1. Select **Transport Type**: Streamable HTTP
 2. Enter your server URL (e.g., `https://{instance_url}/services/apexrest/mcp`)
@@ -176,8 +176,21 @@ screenshot below:
 
 ![MCP Inspector](https://i.imgur.com/pkNvuRg.png)
 
+### Connecting to Your Server with a Python client
 
-### Security Considerations
+1. Install dependencies:
+
+```bash
+pip install aiohttp
+```
+
+2. Run the python MCP Client
+
+```bash
+python mcp-client.py
+```
+
+### Security Considerations (Salesforce MCP Apex Server)
 - Uses `global without sharing` for the REST endpoint to allow external access
 - Individual components can implement their own sharing rules
 - Recommend implementing proper authentication and authorization
