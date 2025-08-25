@@ -161,6 +161,22 @@ server.registerResource(new ProductResource());
 server.registerPrompt(new CodeReviewPrompt());
 ```
 
+### Testing the MCP Server
+
+To test the server, use the [MCP Inspector](https://github.com/modelcontextprotocol/inspector) tool.
+
+### Connecting to Your Server
+
+1. Select **Transport Type**: Streamable HTTP
+2. Enter your server URL (e.g., `https://{instance_url}/services/apexrest/mcp`)
+3. Click **Connect**
+
+After a successful connection, you'll see the list of available resources, tools, and prompts, as shown in the
+screenshot below:
+
+![MCP Inspector](https://i.imgur.com/pkNvuRg.png)
+
+
 ### Security Considerations
 - Uses `global without sharing` for the REST endpoint to allow external access
 - Individual components can implement their own sharing rules
