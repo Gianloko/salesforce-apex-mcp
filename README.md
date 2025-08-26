@@ -13,10 +13,10 @@ The server follows a modular architecture with the following key components:
 ### Core Components
 
 ```
-┌─────────────────────┐
-│   REST Endpoint     │ ← Entry point (/mcp/*)
+┌───────────────────────┐
+│   REST Endpoint       │ ← Entry point (/mcp/*)
 │ RestResourceMcpServer │
-└──────────┬──────────┘
+└──────────┬────────────┘
            │
            v
 ┌─────────────────────┐
