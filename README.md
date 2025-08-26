@@ -190,6 +190,9 @@ pip install aiohttp
 python client/mcp-client.py
 ```
 
+3. Results
+![Terminal Results]([https://i.imgur.com/pkNvuRg.png](https://github.com/Gianloko/salesforce-apex-mcp-server/blob/6a711091c1a171386facab3dab906c82f71b109b/assets/mcp_client_py.jpg))
+
 ### Security Considerations (Salesforce MCP Apex Server)
 - Uses `global without sharing` for the REST endpoint to allow external access
 - Individual components can implement their own sharing rules
