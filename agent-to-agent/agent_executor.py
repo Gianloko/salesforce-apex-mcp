@@ -5,6 +5,7 @@ import httpx
 from a2a.server.agent_execution import AgentExecutor, RequestContext
 from a2a.server.events import EventQueue
 from a2a.utils import new_agent_text_message
+import os
 
 client = OpenAI()
 
@@ -114,7 +115,7 @@ class HelloWorldAgentExecutor(AgentExecutor):
     """
 
     def __init__(self):
-        self.llm_agent = LLMBackedAgent(mcp_base_url="https://orgfarm-225b06bd2f-dev-ed.develop.my.salesforce-sites.com/website/services/apexrest/mcp/")
+        self.llm_agent = LLMBackedAgent(mcp_base_url=os.getenv("MCP_SERVER_URL"))
 
     async def execute(self, context: RequestContext, event_queue: EventQueue) -> None:
         user_message = context.get_user_input()
@@ -125,4 +126,5 @@ class HelloWorldAgentExecutor(AgentExecutor):
 
     async def cancel(self, context: RequestContext, event_queue: EventQueue) -> None:
         # Optional: implement cancellation logic if your agent supports streaming cancellation
+
         print("[Agent Executor] Cancel requested.")
