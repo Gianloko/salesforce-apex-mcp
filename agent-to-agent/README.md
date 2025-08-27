@@ -111,22 +111,14 @@ To add new Salesforce MCP resources:
 
 ## 🚀 Run Instructions
 
-1. Start the agent:
+1. Start the A2A Starlette Server with Agent Executor:
    ```bash
    python samples/python/agents/helloworld/__main__.py
    ```
 
-2. Send a message with the test client:
+2. Start an A2A Agent and send messages:
    ```bash
    python samples/python/agents/helloworld/test_client.py
    ```
 
-3. Observe results streamed back from Salesforce MCP.
-
----
-
-## 📐 Architecture Diagram
-
-![Architecture Diagram](A_diagram_illustrates_the_architecture_of_a_hybrid.png)
-
----
+3. Observe results streamed back from Salesforce MCP discovered by Agent Executor.
