@@ -167,9 +167,11 @@ To test the server, use the [MCP Inspector](https://github.com/modelcontextproto
 
 ### Connecting to Your Server with MCP Inspector
 
-1. Select **Transport Type**: Streamable HTTP
-2. Enter your server URL (e.g., `https://{instance_url}/services/apexrest/mcp`)
-3. Click **Connect**
+0. Enable and activate a public Salesforce Site, and add RestResourceMcpServer apex class to it.
+1. Open the terminal, and run "npx @modelcontextprotocol/inspector" (install the library if needed)
+2. After the webserver is started, select **Transport Type**: Streamable HTTP
+3. Enter your server URL (e.g., `https://{instance_url}/services/apexrest/mcp`)
+4. Click **Connect**
 
 After a successful connection, you'll see the list of available resources, tools, and prompts, as shown in the
 screenshot below:
