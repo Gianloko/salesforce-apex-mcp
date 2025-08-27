@@ -80,14 +80,14 @@ Give me product catalog
 
 ## 🔹 Key Files
 
-- `samples/python/agents/helloworld/__main__.py`  
+- `__main__.py`  
   → Starts the FastAPI-based Agent Server.
 
-- `samples/python/agents/helloworld/agent_executor.py`  
+- `agent_executor.py`  
   → Contains `HelloWorldAgentExecutor` and `LLMBackedAgent`.  
   → Handles LLM orchestration, resource discovery, and execution.
 
-- `samples/python/agents/helloworld/test_client.py`  
+- `test_client.py`  
   → Simple test client for sending messages to the agent.
 
 ---
@@ -113,12 +113,12 @@ To add new Salesforce MCP resources:
 
 1. Start the A2A Starlette Server with Agent Executor:
    ```bash
-   python samples/python/agents/helloworld/__main__.py
+   python __main__.py
    ```
 
 2. Start an A2A Agent and send messages:
    ```bash
-   python samples/python/agents/helloworld/test_client.py
+   python test_client.py
    ```
 
 3. Observe results streamed back from Salesforce MCP discovered by Agent Executor.
