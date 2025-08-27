@@ -87,7 +87,7 @@ Give me product catalog
   → Contains `HelloWorldAgentExecutor` and `LLMBackedAgent`.  
   → Handles LLM orchestration, resource discovery, and execution.
 
-- `test_client.py`  
+- `a2a_client.py`  
   → Simple test client for sending messages to the agent.
 
 ---
@@ -123,7 +123,7 @@ To add new Salesforce MCP resources:
 
 3. Start an A2A Agent and send messages:
    ```bash
-   python test_client.py
+   python a2a_client.py
    ```
 
 4. Observe results streamed back from Salesforce MCP discovered by Agent Executor.
