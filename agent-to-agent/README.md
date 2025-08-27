@@ -111,14 +111,19 @@ To add new Salesforce MCP resources:
 
 ## 🚀 Run Instructions
 
-1. Start the A2A Starlette Server with Agent Executor:
+0. Remember to export OPENAI_API_KEY variable or insert it into an .env file
+   ```bash
+   export OPENAI_API_KEY=sk-.....
+   ```
+
+2. Start the A2A Starlette Server with Agent Executor:
    ```bash
    python __main__.py
    ```
 
-2. Start an A2A Agent and send messages:
+3. Start an A2A Agent and send messages:
    ```bash
    python test_client.py
    ```
 
-3. Observe results streamed back from Salesforce MCP discovered by Agent Executor.
+4. Observe results streamed back from Salesforce MCP discovered by Agent Executor.
