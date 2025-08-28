@@ -12,7 +12,7 @@ logger = logging.getLogger("A2A Agent")
 
 async def main():
     #base_url = "http://localhost:9999"  # Endpoint of your A2A agent
-    base_url = "https://orgfarm-225b06bd2f-dev-ed.develop.my.salesforce-sites.com/website/services/apexrest/a2a/"  # Endpoint of your A2A agent
+    base_url = "<Salesforce A2A Server or your custom A2A Server>"  # Endpoint of your A2A agent
 
     async with httpx.AsyncClient() as httpx_client:
         # --- Fetch agent card ---
@@ -89,3 +89,4 @@ async def main():
 
 if __name__ == "__main__":
     asyncio.run(main())
+
